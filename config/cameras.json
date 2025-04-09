@@ -1,0 +1,4 @@
+{
+  "left": "http://10.1.10.100:13000/video/left",
+  "right": "http://10.1.10.100:13000/video/right"
+}

@@ -1,0 +1,23 @@
+{
+  "materials": [
+    "can_large",
+    "can_medium",
+    "can_nosize",
+    "can_small",
+    "carton_box_large",
+    "carton_box_medium",
+    "carton_box_nosize",
+    "carton_box_small",
+    "glass_bottle_large",
+    "glass_bottle_medium",
+    "glass_bottle_small",
+    "hdpe_bottle_large",
+    "hdpe_bottle_medium",
+    "hdpe_bottle_small",
+    "pet_bottle_large",
+    "pet_bottle_medium",
+    "pet_bottle_nosize",
+    "pet_bottle_small",
+    "unknown"
+  ]
+}
