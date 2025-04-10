@@ -144,12 +144,14 @@ class CameraApp(QWidget):
 
         if self.left_thread.raw_frame is not None:
             left_path = f"results/{folder_name}/{material}_left_{timestamp}.png"
-            cv2.imwrite(left_path, self.left_thread.raw_frame)
+            frame = cv2.rotate(self.left_thread.raw_frame, cv2.ROTATE_90_CLOCKWISE)
+            cv2.imwrite(left_path, frame)
             saved_files.append(left_path)
 
         if self.right_thread.raw_frame is not None:
             right_path = f"results/{folder_name}/{material}_right_{timestamp}.png"
-            cv2.imwrite(right_path, self.right_thread.raw_frame)
+            frame = cv2.rotate(self.right_thread.raw_frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
+            cv2.imwrite(right_path, frame)
             saved_files.append(right_path)
 
         if saved_files:
